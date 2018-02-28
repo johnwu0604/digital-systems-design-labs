@@ -25,19 +25,19 @@ def convertFractionToBinary(digits):
             fraction = fraction - 1
     return binary
 
-def twos_comp_w(val, precision):
-    if(val == ''):
-        val = 0
-    else:
-        val = int(val, 2)
-    val = ~val  # flip the bits
-    val += 1  # add one (two's complement method)
-    p = '0' + str(precision - 1) + 'b'
-    binary = str(format(val, p))
-    binary = binary.replace('-', '1')
-    return binary
+# def twos_comp_w(val, precision):
+#     if(val == ''):
+#         val = 0
+#     else:
+#         val = int(val, 2)
+#     val = ~val  # flip the bits
+#     val += 1  # add one (two's complement method)
+#     p = '0' + str(precision - 1) + 'b'
+#     binary = str(format(val, p))
+#     binary = binary.replace('-', '1')
+#     return binary
 
-def twos_comp_f(val, precision):
+def twos_comp(val, precision):
     p = '0' + str(precision - 1) + 'b'
     p = '0' + str(precision - 2) + 'b'
     if (val == ''):
@@ -112,17 +112,17 @@ y_output = ''
 
 for i in range(len(x_values)):
     complement = x_values[i][1]
-    complement += twos_comp_w((str(bin(int((x_values[i][2]))))).replace('0b',''), w_precision)
+    complement += twos_comp((str(bin(int((x_values[i][2]))))).replace('0b',''), w_precision+1)
     complement += '.'
-    complement += twos_comp_f(convertFractionToBinary(x_values[i][3]), f_precision+2)
-    x_output += complement + ' '
+    complement += twos_comp(convertFractionToBinary(x_values[i][3]), f_precision+2)
+    x_output += complement + '\n'
 
 for i in range(len(y_values)):
     complement = y_values[i][1]
-    complement += twos_comp_w((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision)
+    complement += twos_comp((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision)
     complement += '.'
-    complement += twos_comp_f(convertFractionToBinary(y_values[i][3]), f_precision+2)
-    y_output += complement + ' '
+    complement += twos_comp(convertFractionToBinary(y_values[i][3]), f_precision+2)
+    y_output += complement + '\n'
 
 writer = open('lab1-x-fixed-point.txt', 'w')
 writer.write(x_output)
