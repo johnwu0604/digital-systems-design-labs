@@ -51,7 +51,6 @@ def twos_comp(val, precision):
     p = '0' + str(precision - 1) + 'b'
     binary = str(format(val, p))
     binary = binary.replace('-', '')
-    print(binary)
     return binary
 
 for i in range(0, len(x_string)-1):
@@ -113,14 +112,12 @@ y_output = ''
 for i in range(len(x_values)):
     complement = x_values[i][1]
     complement += twos_comp((str(bin(int((x_values[i][2]))))).replace('0b',''), w_precision+1)
-    complement += '.'
     complement += twos_comp(convertFractionToBinary(x_values[i][3]), f_precision+2)
     x_output += complement + '\n'
 
 for i in range(len(y_values)):
     complement = y_values[i][1]
     complement += twos_comp((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision+1)
-    complement += '.'
     complement += twos_comp(convertFractionToBinary(y_values[i][3]), f_precision+2)
     y_output += complement + '\n'
 
