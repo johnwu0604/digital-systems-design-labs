@@ -122,11 +122,9 @@ for i in range(len(y_values)):
     complement += twos_comp_w((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision)
     complement += '.'
     complement += twos_comp_f(convertFractionToBinary(y_values[i][3]), f_precision+2)
-    x_output += complement + ' '
+    y_output += complement + ' '
 
 writer = open('lab1-x-fixed-point.txt', 'w')
 writer.write(x_output)
 writer = open('lab1-y-fixed-point.txt', 'w')
 writer.write(y_output)
-
-print(convertFractionToBinary('1'))
