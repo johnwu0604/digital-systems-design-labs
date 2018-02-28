@@ -119,7 +119,7 @@ for i in range(len(x_values)):
 
 for i in range(len(y_values)):
     complement = y_values[i][1]
-    complement += twos_comp((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision)
+    complement += twos_comp((str(bin(int((y_values[i][2]))))).replace('0b',''), w_precision+1)
     complement += '.'
     complement += twos_comp(convertFractionToBinary(y_values[i][3]), f_precision+2)
     y_output += complement + '\n'
