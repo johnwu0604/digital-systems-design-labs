@@ -24,6 +24,56 @@ def twos_comp_f(val, precision):
         val = val + '0'
     return val
 
+''' Calculate the precision based on the start and end indices '''
+def calculatePrecision(x_values, y_values, start, end):
+    # Calculate the precision for w and f values
+    w_precision = 1
+    f_precision = 0
+    for i in range(start, end):
+        w = 1
+        f = 0
+        w += len(bin(int(x_values[i][2]))) - 2  # precision of decimal
+        f += len(convertFractionToBinary(x_values[i][3]))  # precision of fraction
+        if (w > w_precision):
+            w_precision = w
+        if (f > f_precision):
+            f_precision = f
+    for i in range(start, end):
+        w = 1
+        f = 0
+        w += len(bin(int(y_values[i][2]))) - 2  # precision of decimal
+        f += len(convertFractionToBinary(y_values[i][3]))  # precision of fraction
+        if (w > w_precision):
+            w_precision = w
+        if (f > f_precision):
+            f_precision = f
+    return w_precision, f_precision
+
+''' Calculates twos complements based on precision and indices to include '''
+def calculateTwosComplements(x_values, y_values, w_precision, f_precision, start, end):
+    # Store the twos complements output
+    x_output = []
+    y_output = []
+    # Convert all x values to twos complements
+    for i in range(start, end):
+        complement = twos_comp_w(x_values[i][1] + x_values[i][2], w_precision)
+        complement = complement + twos_comp_f(convertFractionToBinary(x_values[i][3]), f_precision)
+        x_output.append(complement)
+    # Converts all y values to twos complements
+    for i in range(start, end):
+        complement = twos_comp_w(y_values[i][1] + y_values[i][2], w_precision)
+        complement = complement + twos_comp_f(convertFractionToBinary(y_values[i][3]), f_precision)
+        y_output.append(complement)
+    return x_output, y_output
+
+''' Writes the output to a file '''
+def writeOutput(output_values, filename):
+    output = ''
+    for i in range(len(output_values)):
+        output = output + x_output[i] + '\n'
+    writer = open(filename, 'w')
+    writer.write(output)
+
 # Input files
 X_INPUT = 'lab2-x.txt'
 Y_INPUT = 'lab2-y.txt'
@@ -64,48 +114,62 @@ for i in range(0, len(y_string)-1):
         vector[3] = split[1]
     y_values.append(vector)
 
-# Calculate the precision for w and f values
-w_precision = 1
-f_precision = 0
-for i in range(len(x_values)):
-    w = 1
-    f = 0
-    w += len(bin(int(x_values[i][2]))) - 2 # precision of decimal
-    f += len(convertFractionToBinary(x_values[i][3])) # precision of fraction
-    if (w > w_precision):
-        w_precision = w
-    if (f > f_precision):
-        f_precision = f
-for i in range(len(y_values)):
-    w = 1
-    f = 0
-    w += len(bin(int(y_values[i][2]))) - 2 # precision of decimal
-    f += len(convertFractionToBinary(y_values[i][3])) # precision of fraction
-    if (w > w_precision):
-        w_precision = w
-    if (f > f_precision):
-        f_precision = f
-print('W Precision: ', w_precision)
-print('F Precision: ', f_precision)
+# Calculate precision for main batch
+w, f = calculatePrecision(x_values, y_values, 0, 1000)
+print('Overall W Precision: ', w)
+print('Overall F Precision: ', f, '\n')
 
-# Store the twos complements output
-x_output = ''
-y_output = ''
+# Calculate twos complements based on precision for main batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 0, 1000)
+writeOutput(x_output, 'lab2-x-fixed-point.txt')
+writeOutput(y_output, 'lab2-y-fixed-point.txt')
 
-# Convert all x values to twos complements
-for i in range(len(x_values)):
-    complement = twos_comp_w(x_values[i][1] + x_values[i][2], w_precision)
-    complement = complement + twos_comp_f(convertFractionToBinary(x_values[i][3]), f_precision)
-    x_output = x_output + complement + '\n'
+# Calculate precision for 1st batch
+w, f = calculatePrecision(x_values, y_values, 0, 200)
+print('Batch 1 W Precision: ', w)
+print('Batch 1 F Precision: ', f, '\n')
 
-# Converts all y values to twos complements
-for i in range(len(y_values)):
-    complement = twos_comp_w(y_values[i][1] + y_values[i][2], w_precision)
-    complement = complement + twos_comp_f(convertFractionToBinary(y_values[i][3]), f_precision)
-    y_output = y_output + complement + '\n'
+# Calculate twos complements based on precision for 1st batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 0, 200)
+writeOutput(x_output, 'lab2-x-fixed-point-batch1.txt')
+writeOutput(y_output, 'lab2-y-fixed-point-batch1.txt')
 
-# Write the result to an output file
-writer = open('lab2-x-fixed-point.txt', 'w')
-writer.write(x_output)
-writer = open('lab2-y-fixed-point.txt', 'w')
-writer.write(y_output)
+# Calculate precision for 2nd batch
+w, f = calculatePrecision(x_values, y_values, 200, 400)
+print('Batch 2 W Precision: ', w)
+print('Batch 2 F Precision: ', f, '\n')
+
+# Calculate twos complements based on precision for 2nd batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 200, 400)
+writeOutput(x_output, 'lab2-x-fixed-point-batch2.txt')
+writeOutput(y_output, 'lab2-y-fixed-point-batch2.txt')
+
+# Calculate precision for 3rd batch
+w, f = calculatePrecision(x_values, y_values, 400, 600)
+print('Batch 3 W Precision: ', w)
+print('Batch 3 F Precision: ', f, '\n')
+
+# Calculate twos complements based on precision for 3rd batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 400, 600)
+writeOutput(x_output, 'lab2-x-fixed-point-batch3.txt')
+writeOutput(y_output, 'lab2-y-fixed-point-batch3.txt')
+
+# Calculate precision for 4th batch
+w, f = calculatePrecision(x_values, y_values, 600, 800)
+print('Batch 4 W Precision: ', w)
+print('Batch 4 F Precision: ', f, '\n')
+
+# Calculate twos complements based on precision for 4th batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 600, 800)
+writeOutput(x_output, 'lab2-x-fixed-point-batch4.txt')
+writeOutput(y_output, 'lab2-y-fixed-point-batch4.txt')
+
+# Calculate precision for 5th batch
+w, f = calculatePrecision(x_values, y_values, 800, 1000)
+print('Batch 5 W Precision: ', w)
+print('Batch 5 F Precision: ', f, '\n')
+
+# Calculate twos complements based on precision for 5th batch and writes to file
+x_output, y_output = calculateTwosComplements(x_values, y_values, w, f, 800, 1000)
+writeOutput(x_output, 'lab2-x-fixed-point-batch5.txt')
+writeOutput(y_output, 'lab2-y-fixed-point-batch5.txt')
