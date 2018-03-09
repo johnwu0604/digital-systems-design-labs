@@ -20,7 +20,7 @@ def twos_comp_w(val, precision):
 
 ''' Converts the f component to its twos complement with the correct precision '''
 def twos_comp_f(val, precision):
-    while (len(val) <= precision):
+    while (len(val) < precision):
         val = val + '0'
     return val
 

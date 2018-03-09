@@ -1,0 +1,23 @@
+C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g07_lab2
+-- Compiling architecture details of g07_lab2
+
+} {} {}} C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb
+-- Compiling architecture test of g07_lab2_tb
+** Error: C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd(74): Illegal target for signal assignment.
+** Error: C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd(74): (vcom-1136) Unknown identifier "ready".
+** Error: C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd(97): VHDL Compiler exiting
+
+} {10.0 13.0} {}}

@@ -22,9 +22,9 @@ Vn;VIl4XJO7oUMEA2J47622
 !s100 0<RUD5aCd;@lzZiSm[O^D2
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1520625188
+Z8 !s110 1520627119
 !i10b 1
-Z9 !s108 1520625188.000000
+Z9 !s108 1520627119.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd|
 Z11 !s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd|
 !i113 1
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Eg07_lab2_tb
-Z14 w1520618553
+Z14 w1520627114
 Z15 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
@@ -64,11 +64,11 @@ V@eQ:TKofo[X]J9D^U8jf90
 !s100 =]`^a;D`o=8R:AKk2PgQc3
 R7
 32
-R8
+!s110 1520627120
 !i10b 1
-R9
+!s108 1520627120.000000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
-Z19 !s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
+!s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
 !i113 1
 R12
 R13
@@ -77,18 +77,18 @@ R15
 R1
 R2
 R3
-Z20 DEx4 work 11 g07_lab2_tb 0 22 @eQ:TKofo[X]J9D^U8jf90
+DEx4 work 11 g07_lab2_tb 0 22 @eQ:TKofo[X]J9D^U8jf90
 l36
 L10
-Z21 V2P>6HZ<JJlbzW;zEiQEbk3
-Z22 !s100 m;<ATc`jX9<aDb^>fQkPK0
+Vj;^Y3DR<;^efkG1lDWCN63
+!s100 j?e<b2CE;XL@;Ee0V8KQ:0
 R7
 32
-R8
+!s110 1520626977
 !i10b 1
-R9
+!s108 1520626977.000000
 R18
-R19
+!s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
 !i113 1
 R12
 R13

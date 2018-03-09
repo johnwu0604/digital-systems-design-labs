@@ -45,12 +45,12 @@ begin
 	 ready => ready_out);
 
 clk_generation : process
-begin 
-  clk <= '1';
-  wait for clk_PERIOD/2;
-  clk <= '0';
-  wait for clk_PERIOD/2;
-end process clk_generation;	
+  begin 
+    clk <= '1';
+    wait for clk_PERIOD/2;
+    clk <= '0';
+    wait for clk_PERIOD/2;
+  end process clk_generation;	
 
 
 feeding_inst : process is
@@ -59,35 +59,39 @@ feeding_inst : process is
   variable v_Oline : line;
   variable v_x_in : std_logic_vector(9 downto 0);
   variable v_y_in : std_logic_vector(9 downto 0);
-begin
-  N_in <= "1111101000";
-  rst <= '1';
-  wait until rising_edge(clk);
-  wait until rising_edge(clk);
-  rst <= '0';
 
-  file_open(file_VECTORS_X,"lab2-x-fixed-point.txt",read_mode);
-  file_open(file_VECTORS_Y,"lab2-y-fixed-point.txt",read_mode);
-  file_open(file_RESULTS,"lab2-out.txt",write_mode);
-
-  while not endfile (file_VECTORS_X) loop
-    readline(file_VECTORS_X, v_Iline1);
-    read(v_Iline1, v_x_in);
-    readline(file_VECTORS_Y, v_Iline2);
-    read(v_Iline2, v_y_in);
+  begin
   
-    x_in <= v_x_in;
-    y_in <= v_y_in;
-    
+    N_in <= "1111101000";
+    rst <= '1';
     wait until rising_edge(clk);
-  end loop;
+    wait until rising_edge(clk);
+    rst <= '0';
 
-  if ready_out = '1' then
-    write(v_Oline, mac_out);
-    writeline(file_RESULTS, v_Oline);
-    wait;
-  end if;
+    file_open(file_VECTORS_X,"lab2-x-fixed-point.txt",read_mode);
+    file_open(file_VECTORS_Y,"lab2-y-fixed-point.txt",read_mode);
+    file_open(file_RESULTS,"lab2-out.txt",write_mode);
+    ready_out <= '1';
+
+    while not endfile (file_VECTORS_X) loop
+      readline(file_VECTORS_X, v_Iline1);
+      read(v_Iline1, v_x_in);
+      readline(file_VECTORS_Y, v_Iline2);
+      read(v_Iline2, v_y_in);
   
-end process feeding_inst;
+      x_in <= v_x_in;
+      y_in <= v_y_in;
+
+      if ready_out = '1' then
+        write(v_Oline, mac_out);
+        writeline(file_RESULTS, v_Oline);
+      end if;
+    
+      wait until rising_edge(clk);
+    end loop;
+  
+    wait;
+  
+  end process feeding_inst;
 
 end architecture test;
