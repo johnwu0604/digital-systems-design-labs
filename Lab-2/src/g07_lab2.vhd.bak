@@ -13,16 +13,16 @@ entity g07_lab2 is
 end g07_lab2;
 		
 architecture details of g07_lab2 is
-signal temp:  std_logic_vector(20 downto 0);
+signal temp:  signed(20 downto 0);
 begin
 	process(clk,rst)
 	begin
-      ready <= '1';
-		if (rst = '1') then
+                ready <= '1';
+		if(rst = '1') then
 			temp <= (others => '0');
 		elsif(rising_edge(clk)) then
-		   temp <= std_logic_vector(unsigned(temp) + unsigned(unsigned(x)*unsigned(y)));
+			temp <= temp + signed(x)*signed(y);
 		end if;
-   end process;
-   mac <= temp;
+        end process;
+        mac <= std_logic_vector(temp);
 end details;

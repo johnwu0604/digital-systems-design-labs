@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/16.1
 Eg07_lab2
-Z0 w1520614229
+Z0 w1520636429
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -18,13 +18,13 @@ Z5 8C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd
 Z6 FC:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd
 l0
 L5
-Vn;VIl4XJO7oUMEA2J47622
-!s100 0<RUD5aCd;@lzZiSm[O^D2
+V0Lnm31cF`CcO5nUND5Oa70
+!s100 6QzYV@[Aa4FQ5;]>Q>z@c2
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1520627119
+Z8 !s110 1520636535
 !i10b 1
-Z9 !s108 1520627119.000000
+Z9 !s108 1520636535.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd|
 Z11 !s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/src/g07_lab2.vhd|
 !i113 1
@@ -34,11 +34,11 @@ Adetails
 R1
 R2
 R3
-DEx4 work 8 g07_lab2 0 22 n;VIl4XJO7oUMEA2J47622
+DEx4 work 8 g07_lab2 0 22 0Lnm31cF`CcO5nUND5Oa70
 l17
 L15
-V1komd2dY@?z=B;F9^f<<^1
-!s100 CnKA4z8AhTa@T<01TLHHZ0
+VlD>JhDzlz[6mkmF0hLf4I0
+!s100 f@b=@;hYK5>1e253KO@852
 R7
 32
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Eg07_lab2_tb
-Z14 w1520627114
+Z14 w1520633789
 Z15 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
@@ -64,11 +64,11 @@ V@eQ:TKofo[X]J9D^U8jf90
 !s100 =]`^a;D`o=8R:AKk2PgQc3
 R7
 32
-!s110 1520627120
+Z18 !s110 1520636536
 !i10b 1
-!s108 1520627120.000000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
-!s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
+R9
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
+Z20 !s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
 !i113 1
 R12
 R13
@@ -77,18 +77,18 @@ R15
 R1
 R2
 R3
-DEx4 work 11 g07_lab2_tb 0 22 @eQ:TKofo[X]J9D^U8jf90
+Z21 DEx4 work 11 g07_lab2_tb 0 22 @eQ:TKofo[X]J9D^U8jf90
 l36
 L10
-Vj;^Y3DR<;^efkG1lDWCN63
-!s100 j?e<b2CE;XL@;Ee0V8KQ:0
+Z22 Vlfa@dDiE`F`U;M=VTHKC`3
+Z23 !s100 j@b=oC9T3f9SJPFWk5K?c2
 R7
 32
-!s110 1520626977
-!i10b 1
-!s108 1520626977.000000
 R18
-!s107 C:/Users/johnw/Documents/classes/ecse-325/Lab-2/test/g07_lab2_tb.vhd|
+!i10b 1
+R9
+R19
+R20
 !i113 1
 R12
 R13

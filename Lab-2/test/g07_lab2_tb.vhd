@@ -15,7 +15,7 @@ component g07_lab2 is
 	     N    : in std_logic_vector(9 downto 0);
 	     clk  : in std_logic;
 	     rst  : in std_logic;
-	     mac  : out std_logic_vector(19 downto 0);
+	     mac  : out std_logic_vector(20 downto 0);
 	     ready: out std_logic);
 end component g07_lab2;
 
@@ -30,7 +30,7 @@ signal y_in     : std_logic_vector(9 downto 0);
 signal N_in     : std_logic_vector(9 downto 0);
 signal clk      : std_logic;
 signal rst      : std_logic;
-signal mac_out  : std_logic_vector(19 downto 0);
+signal mac_out  : std_logic_vector(20 downto 0);
 signal ready_out: std_logic;
 
 begin
@@ -71,7 +71,6 @@ feeding_inst : process is
     file_open(file_VECTORS_X,"lab2-x-fixed-point.txt",read_mode);
     file_open(file_VECTORS_Y,"lab2-y-fixed-point.txt",read_mode);
     file_open(file_RESULTS,"lab2-out.txt",write_mode);
-    ready_out <= '1';
 
     while not endfile (file_VECTORS_X) loop
       readline(file_VECTORS_X, v_Iline1);
@@ -81,12 +80,12 @@ feeding_inst : process is
   
       x_in <= v_x_in;
       y_in <= v_y_in;
-
+      
       if ready_out = '1' then
         write(v_Oline, mac_out);
         writeline(file_RESULTS, v_Oline);
       end if;
-    
+
       wait until rising_edge(clk);
     end loop;
   

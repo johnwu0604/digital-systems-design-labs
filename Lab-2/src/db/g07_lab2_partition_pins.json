@@ -84,6 +84,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "mac[20]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
