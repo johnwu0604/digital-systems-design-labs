@@ -70,7 +70,7 @@ def calculateTwosComplements(x_values, y_values, w_precision, f_precision, start
 def writeOutput(output_values, filename):
     output = ''
     for i in range(len(output_values)):
-        output = output + x_output[i] + '\n'
+        output = output + output_values[i] + '\n'
     writer = open(filename, 'w')
     writer.write(output)
 
