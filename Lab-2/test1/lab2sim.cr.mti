@@ -1,1 +1,88 @@
+C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb_Batch1
+-- Compiling architecture test of g07_lab2_tb_Batch1
 
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb_Batch2
+-- Compiling architecture test of g07_lab2_tb_Batch2
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb_Batch3
+-- Compiling architecture test of g07_lab2_tb_Batch3
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb_Batch4
+-- Compiling architecture test of g07_lab2_tb_Batch4
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch1.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g07_lab2_Batch1
+-- Compiling architecture details of g07_lab2_Batch1
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb_Batch5
+-- Compiling architecture test of g07_lab2_tb_Batch5
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g07_lab2_tb
+-- Compiling architecture test of g07_lab2_tb
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g07_lab2_Batch5
+-- Compiling architecture details of g07_lab2_Batch5
+
+} {} {}} C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/src/g07_lab2.vhd {1 {vcom -work work -2002 -explicit C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/src/g07_lab2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g07_lab2
+-- Compiling architecture details of g07_lab2
+
+} {} {}}

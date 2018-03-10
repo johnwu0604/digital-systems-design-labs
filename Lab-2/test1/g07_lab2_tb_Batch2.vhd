@@ -15,7 +15,7 @@ component g07_lab2_Batch2 is
 	     N    : in std_logic_vector(7 downto 0);
 	     clk  : in std_logic;
 	     rst  : in std_logic;
-	     mac  : out std_logic_vector(15 downto 0);
+	     mac  : out std_logic_vector(17 downto 0);
 	     ready: out std_logic);
 end component g07_lab2_Batch2;
 
@@ -30,7 +30,7 @@ signal y_in     : std_logic_vector(7 downto 0);
 signal N_in     : std_logic_vector(7 downto 0);
 signal clk      : std_logic;
 signal rst      : std_logic;
-signal mac_out  : std_logic_vector(15 downto 0);
+signal mac_out  : std_logic_vector(17 downto 0);
 signal ready_out: std_logic;
 
 begin
@@ -57,8 +57,8 @@ feeding_inst : process is
   variable v_Iline1 : line;
   variable v_Iline2 : line;
   variable v_Oline : line;
-  variable v_x_in : std_logic_vector(9 downto 0);
-  variable v_y_in : std_logic_vector(9 downto 0);
+  variable v_x_in : std_logic_vector(7 downto 0);
+  variable v_y_in : std_logic_vector(7 downto 0);
   begin
   
     N_in <= "11001000";

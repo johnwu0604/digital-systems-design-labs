@@ -15,7 +15,7 @@ component g07_lab2_Batch3 is
 	     N    : in std_logic_vector(7 downto 0);
 	     clk  : in std_logic;
 	     rst  : in std_logic;
-	     mac  : out std_logic_vector(15 downto 0);
+	     mac  : out std_logic_vector(17 downto 0);
 	     ready: out std_logic);
 end component g07_lab2_Batch3;
 
@@ -30,7 +30,7 @@ signal y_in     : std_logic_vector(7 downto 0);
 signal N_in     : std_logic_vector(7 downto 0);
 signal clk      : std_logic;
 signal rst      : std_logic;
-signal mac_out  : std_logic_vector(15 downto 0);
+signal mac_out  : std_logic_vector(17 downto 0);
 signal ready_out: std_logic;
 
 begin

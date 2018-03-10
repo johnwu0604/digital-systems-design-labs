@@ -8,13 +8,13 @@ entity g07_lab2_Batch3 is
 		  N: in std_logic_vector(7 downto 0);
 		clk: in std_logic;
 		rst: in std_logic;
-		mac: out std_logic_vector(15 downto 0);
+		mac: out std_logic_vector(17 downto 0);
 		ready: out std_logic);
 end g07_lab2_Batch3;
 		
 architecture details of g07_lab2_Batch3 is
   
-signal temp:  std_logic_vector(15 downto 0);
+signal temp:  std_logic_vector(17 downto 0);
 begin
 	process(clk,rst)
 	begin
