@@ -189,7 +189,7 @@ R12
 !s100 6nZ^:`F@lKe5f1PM2eTF_2
 !i10b 1
 Eg07_lab2_batch5
-Z37 w1520640073
+Z37 w1520644607
 R1
 R2
 R3
@@ -198,56 +198,56 @@ Z38 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.
 Z39 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.vhd
 l0
 L5
-Vo_SVLPlfdZ3`ceK@>6]8]3
+VGF5b`32D>zH7^X?4CkNZH3
+!s100 ZRVgF8AUN9eAG=h<?Na=C3
 R7
 32
-Z40 !s108 1520643757.916000
+!i10b 1
+Z40 !s108 1520644612.351000
 Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.vhd|
 Z42 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_Batch5.vhd|
 R11
 R12
-!s100 bFM7A2MiAmKaoVQfEXfi@1
-!i10b 1
 Adetails
 R1
 R2
 R3
-DEx4 work 15 g07_lab2_batch5 0 22 o_SVLPlfdZ3`ceK@>6]8]3
+DEx4 work 15 g07_lab2_batch5 0 22 GF5b`32D>zH7^X?4CkNZH3
 l18
 L15
-V7CM1RzWG]gS:kdC8k@VSZ2
+Z43 V7CM1RzWG]gS:kdC8k@VSZ2
+Z44 !s100 m51bJ_aDKz1FZTD`i^mnU1
 R7
 32
+!i10b 1
 R40
 R41
 R42
 R11
 R12
-!s100 m51bJ_aDKz1FZTD`i^mnU1
-!i10b 1
 Eg07_lab2_tb
-Z43 w1520642820
-Z44 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z45 w1520642820
+Z46 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R1
 R2
 R3
 R4
-Z45 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd
-Z46 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd
+Z47 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd
+Z48 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd
 l0
 L7
 Vl[1Q;PIQ?3PhoTkdKOoFn2
 R7
 32
-Z47 !s108 1520643753.218000
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd|
-Z49 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd|
+Z49 !s108 1520643753.218000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd|
+Z51 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test/g07_lab2_tb.vhd|
 R11
 R12
 !s100 ZzcPPYC7;`66<TFB4U29P2
 !i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
@@ -257,36 +257,36 @@ L10
 V3MV^gznVm0;=SJPOn4SRL0
 R7
 32
-R47
-R48
 R49
+R50
+R51
 R11
 R12
 !s100 7Z`7<E]0=H>mPX1O]88LE1
 !i10b 1
 Eg07_lab2_tb_batch1
-Z50 w1520642172
-R44
+Z52 w1520642172
+R46
 R1
 R2
 R3
 R4
-Z51 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd
-Z52 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd
+Z53 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd
+Z54 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd
 l0
 L7
 Va98C1gI75Di6F0TInEGZ?3
 R7
 32
-Z53 !s108 1520643758.576000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd|
-Z55 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd|
+Z55 !s108 1520643758.576000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd|
+Z57 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch1.vhd|
 R11
 R12
 !s100 _bE`CejcUgd2RSz8m^L0E2
 !i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
@@ -296,36 +296,36 @@ L10
 VZOi5oYNHl4B>CZYnmZJkE2
 R7
 32
-R53
-R54
 R55
+R56
+R57
 R11
 R12
 !s100 gAccD61A978YzoTWjzgTS3
 !i10b 1
 Eg07_lab2_tb_batch2
-Z56 w1520643557
-R44
+Z58 w1520643557
+R46
 R1
 R2
 R3
 R4
-Z57 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd
-Z58 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd
+Z59 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd
+Z60 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd
 l0
 L7
 Vm>K?D`?KFZGSUkj1C1INJ1
 R7
 32
-Z59 !s108 1520643760.314000
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd|
-Z61 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd|
+Z61 !s108 1520643760.314000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd|
+Z63 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch2.vhd|
 R11
 R12
 !s100 IY1P@XB;nCAk:64Xf=om52
 !i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
@@ -335,36 +335,36 @@ L10
 VQg=o7aefX]ocb0eYzMg<l0
 R7
 32
-R59
-R60
 R61
+R62
+R63
 R11
 R12
 !s100 I4`U^][V39UiIH1Ek?^MT1
 !i10b 1
 Eg07_lab2_tb_batch3
-Z62 w1520643592
-R44
+Z64 w1520643592
+R46
 R1
 R2
 R3
 R4
-Z63 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd
-Z64 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd
+Z65 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd
+Z66 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd
 l0
 L7
 VOl]7R8_gjKbja`Oi[c05o2
 R7
 32
-Z65 !s108 1520643761.966000
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd|
-Z67 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd|
+Z67 !s108 1520643761.966000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd|
+Z69 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch3.vhd|
 R11
 R12
 !s100 f_WVFP=?4LO3XA<fDT[0:0
 !i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
@@ -374,36 +374,36 @@ L10
 V8?jg<l]?K`k5jYgEa^PJo0
 R7
 32
-R65
-R66
 R67
+R68
+R69
 R11
 R12
 !s100 1^DVN`SlaMgZQSTXGK2K73
 !i10b 1
 Eg07_lab2_tb_batch4
-Z68 w1520643615
-R44
+Z70 w1520643615
+R46
 R1
 R2
 R3
 R4
-Z69 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd
-Z70 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd
+Z71 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd
+Z72 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd
 l0
 L7
 V0ECMjNfa^7`XLcdB[?eOI3
 R7
 32
-Z71 !s108 1520643763.522000
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd|
-Z73 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd|
+Z73 !s108 1520643763.522000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd|
+Z75 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch4.vhd|
 R11
 R12
 !s100 3RgUz[;O9Y:Zo0JCknYIM3
 !i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
@@ -411,51 +411,51 @@ DEx4 work 18 g07_lab2_tb_batch4 0 22 0ECMjNfa^7`XLcdB[?eOI3
 l36
 L10
 VWdHBk5aKDIa@_`ga>X[N71
-!s100 W^:V^W4IL:F9Xj;X[QSj82
 R7
 32
-R71
-R72
 R73
+R74
+R75
 R11
 R12
+!s100 W^:V^W4IL:F9Xj;X[QSj82
 !i10b 1
 Eg07_lab2_tb_batch5
-Z74 w1520642258
-R44
+Z76 w1520642258
+R46
 R1
 R2
 R3
 R4
-Z75 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd
-Z76 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd
+Z77 8C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd
+Z78 FC:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd
 l0
 L7
 VFFzjhKfT27;PON51SJf^f3
-!s100 fb30?I0`A@[c94T:@9K?@3
 R7
 32
-!i10b 1
-Z77 !s108 1520643764.285000
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd|
-Z79 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd|
+Z79 !s108 1520643764.285000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd|
+Z81 !s107 C:/Users/EGE/Desktop/McGill/Winter2018/ecse325/Lab-2/test1/g07_lab2_tb_Batch5.vhd|
 R11
 R12
+!s100 fb30?I0`A@[c94T:@9K?@3
+!i10b 1
 Atest
-R44
+R46
 R1
 R2
 R3
-Z80 DEx4 work 18 g07_lab2_tb_batch5 0 22 FFzjhKfT27;PON51SJf^f3
+DEx4 work 18 g07_lab2_tb_batch5 0 22 FFzjhKfT27;PON51SJf^f3
 l36
 L10
-Z81 VWf@7XbiK^<JhBOW?YY6C51
-Z82 !s100 KWQTL4=<GD;EA`zaFjUKW1
+VWf@7XbiK^<JhBOW?YY6C51
+!s100 KWQTL4=<GD;EA`zaFjUKW1
 R7
 32
-!i10b 1
-R77
-R78
 R79
+R80
+R81
 R11
 R12
+!i10b 1

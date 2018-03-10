@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity g07_lab2_Batch5 is
 	port(x: in std_logic_vector(8 downto 0);
 		  y: in std_logic_vector(8 downto 0);
-		  N: in std_logic_vector(8 downto 0);
+		  N: in std_logic_vector(7 downto 0);
 		clk: in std_logic;
 		rst: in std_logic;
 		mac: out std_logic_vector(19 downto 0);
