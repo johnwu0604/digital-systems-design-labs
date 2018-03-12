@@ -12,7 +12,7 @@ architecture test of g07_lab3_tb is
 
 component g07_FIR is 
 	port(x		:in std_logic_vector(15 downto 0);
-	     y		:out std_logic_vector(16 downto 0);
+	     y		:out std_logic_vector(32 downto 0);
 	     clk	:in std_logic;
 	     rst	:in std_logic);
 end component g07_FIR;
@@ -20,7 +20,7 @@ end component g07_FIR;
 constant clk_PERIOD	:  time  := 120 ns;
 
 signal x_in	: std_logic_vector(15 downto 0);
-signal y_out 	: std_logic_vector(16 downto 0);
+signal y_out 	: std_logic_vector(32 downto 0);
 signal clk_in 	: std_logic;
 signal rst_in	: std_logic;
 
