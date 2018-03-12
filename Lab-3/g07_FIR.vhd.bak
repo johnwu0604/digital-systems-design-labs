@@ -82,7 +82,7 @@ begin
 		  if(rst='1') then
 			 y <= (others=>'0');
 		  elsif(rising_edge(clk)) then
-			 y <= std_logic_vector(add1(31 downto 15));
+			 y <= std_logic_vector(add1(29 downto 13));
 		  end if;
 		end process p_output;
 		
