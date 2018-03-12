@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/16.1
+Eg07_lab3_tb
+w1520881019
+DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+d//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3
+8//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3/g07_lab3_tb.vhd
+F//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3/g07_lab3_tb.vhd
+l0
+L8
+V];gBco7_;5oh1AOZZSOjU3
+!s100 Fo6DA2IH>Rg5IJPm[c^Q:2
+OV;C;10.5b;63
+32
+!s110 1520881021
+!i10b 1
+!s108 1520881020.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3/g07_lab3_tb.vhd|
+!s107 //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3/g07_lab3_tb.vhd|
+!i113 1
+o-work work -2002 -explicit
+tExplicit 1 CvgOpt 0
