@@ -100,7 +100,6 @@ feeding_inst: process is
 	end loop;
 	wait until rising_edge(clk_in);
 	wait until rising_edge(clk_in);
-	wait;
 	 
 end process feeding_inst;
 

@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-3
+Pcoefficient_input_type
+Z0 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1521489383
+Z4 d//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4
+Z5 8//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_lab4_tb.vhd
+Z6 F//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_lab4_tb.vhd
+l0
+L5
+V9OLi<;X<izlB]M2KII0UE3
+!s100 JZ]@=2Uz[6onIL@fmW5O01
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1521489401
+!i10b 1
+Z9 !s108 1521489401.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_lab4_tb.vhd|
+Z11 !s107 //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_lab4_tb.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Eg07_fir
+Z14 w1521485953
+Z15 DPx4 work 22 coefficient_input_type 0 22 9OLi<;X<izlB]M2KII0UE3
+R0
+R1
+R2
+R4
+Z16 8//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_FIR.vhd
+Z17 F//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_FIR.vhd
+l0
+L14
+V4OhU6oi:Y<_4V<nSj3R::0
+!s100 lS256=0ioh3m96cGPP<Ca3
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|//campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_FIR.vhd|
+Z19 !s107 //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_FIR.vhd|
+!i113 1
+R12
+R13
+Adetails
+R15
+R0
+R1
+R2
+DEx4 work 7 g07_fir 0 22 4OhU6oi:Y<_4V<nSj3R::0
+l34
+L21
+VjkHm=`kJn4NQD2O6Gjh8=1
+!s100 oZ@2Ond`QB`E^m6;6];z42
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Eg07_lab3_tb
+w1521486211
+Z20 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R0
+R1
+R2
+R4
+R5
+R6
+l0
+L8
+V];gBco7_;5oh1AOZZSOjU3
+!s100 Fo6DA2IH>Rg5IJPm[c^Q:2
+R7
+32
+!s110 1521488075
+!i10b 1
+!s108 1521488075.000000
+R10
+R11
+!i113 1
+R12
+R13
+Eg07_lab4_tb
+R3
+R20
+R15
+R0
+R1
+R2
+R4
+R5
+R6
+l0
+L16
+VP89;U52^Ao1?8T0m^;JSU1
+!s100 P:BdAhY[VQLMTPK:C6V?e1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Atest
+R20
+R15
+R0
+R1
+R2
+Z21 DEx4 work 11 g07_lab4_tb 0 22 P89;U52^Ao1?8T0m^;JSU1
+l44
+L19
+VI:]:bI@Zf4R01iF=[l52P2
+!s100 0g[YK7MQko3f77Y[CF;Lg1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
