@@ -11,37 +11,38 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.coefficient_input_type.all;
 
-entity g07_Lab4 is
+entity g07_lab4 is
 	port ( x : in std_logic_vector(15 downto 0);
-	       --c : in c_input;
+	       c : in c_input;
 			 clk, rst: in std_logic; 
 			 y : out std_logic_vector(16 downto 0));
-end g07_Lab4;
+end g07_lab4;
 
-architecture details of g07_Lab4 is
+architecture details of g07_lab4 is
 
-   type input_array is array(0 to 24) of unsigned(15 downto 0);
+   type input_array is array(0 to 24) of unsigned(16 downto 0);
+   type input_array_long is array(0 to 24) of unsigned(31 downto 0);
 
-	signal c: c_input;
    signal input: input_array;
-   signal output : unsigned(31 downto 0);
+   signal input_long: input_array_long;
 
 begin
 	
 	fir_process : process (rst,clk)
+                variable current_input: unsigned(15 downto 0);
 		begin
 		  if(rst='1') then
-			 output <= (others=>'0');
 			 input <=  (others=>(others=>'0'));
 		  elsif(rising_edge(clk)) then
-			 input(0) <= unsigned(x);
-			 output <= input(0) * c(0);
+			 current_input := unsigned(x);
+			 input_long(0) <= current_input * c(0);
+			 input(0) <= unsigned(input_long(0)(31 downto 15));
 			 for I in 1 to 24 loop
-				output <= output + input(I) * c(I);
-            input(I) <= input(I-1);
+				input_long(I) <= input_long(I-1) + current_input*c(I);
+				input(I) <= unsigned(input_long(I)(31 downto 15));          
 			 end loop;			
-		  end if;
-		  y <= std_logic_vector(output(31 downto 15));
+		  end if; 
+		  y <= std_logic_vector(input(24));	
 		end process fir_process;
 
 end details;
