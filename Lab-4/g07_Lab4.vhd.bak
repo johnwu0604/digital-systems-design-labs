@@ -11,14 +11,14 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.coefficient_input_type.all;
 
-entity g07_Lab4 is
+entity g07_lab4 is
 	port ( x : in std_logic_vector(15 downto 0);
 	       c : in c_input;
 			 clk, rst: in std_logic; 
 			 y : out std_logic_vector(16 downto 0));
-end g07_Lab4;
+end g07_lab4;
 
-architecture details of g07_Lab4 is
+architecture details of g07_lab4 is
 
    type input_array is array(0 to 24) of unsigned(16 downto 0);
    type input_array_long is array(0 to 24) of unsigned(31 downto 0);

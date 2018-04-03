@@ -1,0 +1,699 @@
+Analysis & Synthesis report for lab_4_g07
+Tue Apr 03 13:16:35 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Apr 03 13:16:35 2018           ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name                   ; lab_4_g07                                       ;
+; Top-level Entity Name           ; g07_Lab4                                        ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 34                                              ;
+; Total pins                      ; 435                                             ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 13                                              ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; g07_Lab4           ; lab_4_g07          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++------------------------------------------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++------------------------------------------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd ; yes             ; User VHDL File  ; //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd ;         ;
++------------------------------------------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 20        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 32        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 32        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 34        ;
+;                                             ;           ;
+; I/O pins                                    ; 435       ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 13        ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 46        ;
+; Total fan-out                               ; 1292      ;
+; Average fan-out                             ; 1.36      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |g07_Lab4                  ; 32 (32)           ; 34 (34)      ; 0                 ; 13         ; 435  ; 0            ; |g07_Lab4           ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary           ;
++------------------------------------------+-------------+
+; Statistic                                ; Number Used ;
++------------------------------------------+-------------+
+; Independent 18x18                        ; 1           ;
+; Sum of two 18x18 with systolic register  ; 12          ;
+; Total number of DSP blocks               ; 13          ;
+;                                          ;             ;
+; Fixed Point Unsigned Multiplier          ; 25          ;
+; Fixed Point Dedicated Output Adder Chain ; 11          ;
++------------------------------------------+-------------+
+
+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; input_long[0][31]                       ; Lost fanout        ;
+; input_long[0][30]                       ; Lost fanout        ;
+; input_long[0][29]                       ; Lost fanout        ;
+; input_long[0][28]                       ; Lost fanout        ;
+; input_long[0][27]                       ; Lost fanout        ;
+; input_long[0][26]                       ; Lost fanout        ;
+; input_long[0][25]                       ; Lost fanout        ;
+; input_long[0][24]                       ; Lost fanout        ;
+; input_long[0][23]                       ; Lost fanout        ;
+; input_long[0][22]                       ; Lost fanout        ;
+; input_long[0][21]                       ; Lost fanout        ;
+; input_long[0][20]                       ; Lost fanout        ;
+; input_long[0][19]                       ; Lost fanout        ;
+; input_long[0][18]                       ; Lost fanout        ;
+; input_long[0][17]                       ; Lost fanout        ;
+; input_long[0][16]                       ; Lost fanout        ;
+; input_long[0][15]                       ; Lost fanout        ;
+; input_long[0][14]                       ; Lost fanout        ;
+; input_long[0][13]                       ; Lost fanout        ;
+; input_long[0][12]                       ; Lost fanout        ;
+; input_long[0][11]                       ; Lost fanout        ;
+; input_long[0][10]                       ; Lost fanout        ;
+; input_long[0][9]                        ; Lost fanout        ;
+; input_long[0][8]                        ; Lost fanout        ;
+; input_long[0][7]                        ; Lost fanout        ;
+; input_long[0][6]                        ; Lost fanout        ;
+; input_long[0][5]                        ; Lost fanout        ;
+; input_long[0][4]                        ; Lost fanout        ;
+; input_long[0][3]                        ; Lost fanout        ;
+; input_long[0][2]                        ; Lost fanout        ;
+; input_long[0][1]                        ; Lost fanout        ;
+; input_long[0][0]                        ; Lost fanout        ;
+; input_long[2][31]                       ; Lost fanout        ;
+; input_long[2][30]                       ; Lost fanout        ;
+; input_long[2][29]                       ; Lost fanout        ;
+; input_long[2][28]                       ; Lost fanout        ;
+; input_long[2][27]                       ; Lost fanout        ;
+; input_long[2][26]                       ; Lost fanout        ;
+; input_long[2][25]                       ; Lost fanout        ;
+; input_long[2][24]                       ; Lost fanout        ;
+; input_long[2][23]                       ; Lost fanout        ;
+; input_long[2][22]                       ; Lost fanout        ;
+; input_long[2][21]                       ; Lost fanout        ;
+; input_long[2][20]                       ; Lost fanout        ;
+; input_long[2][19]                       ; Lost fanout        ;
+; input_long[2][18]                       ; Lost fanout        ;
+; input_long[2][17]                       ; Lost fanout        ;
+; input_long[2][16]                       ; Lost fanout        ;
+; input_long[2][15]                       ; Lost fanout        ;
+; input_long[2][14]                       ; Lost fanout        ;
+; input_long[2][13]                       ; Lost fanout        ;
+; input_long[2][12]                       ; Lost fanout        ;
+; input_long[2][11]                       ; Lost fanout        ;
+; input_long[2][10]                       ; Lost fanout        ;
+; input_long[2][9]                        ; Lost fanout        ;
+; input_long[2][8]                        ; Lost fanout        ;
+; input_long[2][7]                        ; Lost fanout        ;
+; input_long[2][6]                        ; Lost fanout        ;
+; input_long[2][5]                        ; Lost fanout        ;
+; input_long[2][4]                        ; Lost fanout        ;
+; input_long[2][3]                        ; Lost fanout        ;
+; input_long[2][2]                        ; Lost fanout        ;
+; input_long[2][1]                        ; Lost fanout        ;
+; input_long[2][0]                        ; Lost fanout        ;
+; input_long[4][31]                       ; Lost fanout        ;
+; input_long[4][30]                       ; Lost fanout        ;
+; input_long[4][29]                       ; Lost fanout        ;
+; input_long[4][28]                       ; Lost fanout        ;
+; input_long[4][27]                       ; Lost fanout        ;
+; input_long[4][26]                       ; Lost fanout        ;
+; input_long[4][25]                       ; Lost fanout        ;
+; input_long[4][24]                       ; Lost fanout        ;
+; input_long[4][23]                       ; Lost fanout        ;
+; input_long[4][22]                       ; Lost fanout        ;
+; input_long[4][21]                       ; Lost fanout        ;
+; input_long[4][20]                       ; Lost fanout        ;
+; input_long[4][19]                       ; Lost fanout        ;
+; input_long[4][18]                       ; Lost fanout        ;
+; input_long[4][17]                       ; Lost fanout        ;
+; input_long[4][16]                       ; Lost fanout        ;
+; input_long[4][15]                       ; Lost fanout        ;
+; input_long[4][14]                       ; Lost fanout        ;
+; input_long[4][13]                       ; Lost fanout        ;
+; input_long[4][12]                       ; Lost fanout        ;
+; input_long[4][11]                       ; Lost fanout        ;
+; input_long[4][10]                       ; Lost fanout        ;
+; input_long[4][9]                        ; Lost fanout        ;
+; input_long[4][8]                        ; Lost fanout        ;
+; input_long[4][7]                        ; Lost fanout        ;
+; input_long[4][6]                        ; Lost fanout        ;
+; input_long[4][5]                        ; Lost fanout        ;
+; input_long[4][4]                        ; Lost fanout        ;
+; input_long[4][3]                        ; Lost fanout        ;
+; input_long[4][2]                        ; Lost fanout        ;
+; input_long[4][1]                        ; Lost fanout        ;
+; input_long[4][0]                        ; Lost fanout        ;
+; input_long[6][31]                       ; Lost fanout        ;
+; input_long[6][30]                       ; Lost fanout        ;
+; input_long[6][29]                       ; Lost fanout        ;
+; input_long[6][28]                       ; Lost fanout        ;
+; input_long[6][27]                       ; Lost fanout        ;
+; input_long[6][26]                       ; Lost fanout        ;
+; input_long[6][25]                       ; Lost fanout        ;
+; input_long[6][24]                       ; Lost fanout        ;
+; input_long[6][23]                       ; Lost fanout        ;
+; input_long[6][22]                       ; Lost fanout        ;
+; input_long[6][21]                       ; Lost fanout        ;
+; input_long[6][20]                       ; Lost fanout        ;
+; input_long[6][19]                       ; Lost fanout        ;
+; input_long[6][18]                       ; Lost fanout        ;
+; input_long[6][17]                       ; Lost fanout        ;
+; input_long[6][16]                       ; Lost fanout        ;
+; input_long[6][15]                       ; Lost fanout        ;
+; input_long[6][14]                       ; Lost fanout        ;
+; input_long[6][13]                       ; Lost fanout        ;
+; input_long[6][12]                       ; Lost fanout        ;
+; input_long[6][11]                       ; Lost fanout        ;
+; input_long[6][10]                       ; Lost fanout        ;
+; input_long[6][9]                        ; Lost fanout        ;
+; input_long[6][8]                        ; Lost fanout        ;
+; input_long[6][7]                        ; Lost fanout        ;
+; input_long[6][6]                        ; Lost fanout        ;
+; input_long[6][5]                        ; Lost fanout        ;
+; input_long[6][4]                        ; Lost fanout        ;
+; input_long[6][3]                        ; Lost fanout        ;
+; input_long[6][2]                        ; Lost fanout        ;
+; input_long[6][1]                        ; Lost fanout        ;
+; input_long[6][0]                        ; Lost fanout        ;
+; input_long[8][31]                       ; Lost fanout        ;
+; input_long[8][30]                       ; Lost fanout        ;
+; input_long[8][29]                       ; Lost fanout        ;
+; input_long[8][28]                       ; Lost fanout        ;
+; input_long[8][27]                       ; Lost fanout        ;
+; input_long[8][26]                       ; Lost fanout        ;
+; input_long[8][25]                       ; Lost fanout        ;
+; input_long[8][24]                       ; Lost fanout        ;
+; input_long[8][23]                       ; Lost fanout        ;
+; input_long[8][22]                       ; Lost fanout        ;
+; input_long[8][21]                       ; Lost fanout        ;
+; input_long[8][20]                       ; Lost fanout        ;
+; input_long[8][19]                       ; Lost fanout        ;
+; input_long[8][18]                       ; Lost fanout        ;
+; input_long[8][17]                       ; Lost fanout        ;
+; input_long[8][16]                       ; Lost fanout        ;
+; input_long[8][15]                       ; Lost fanout        ;
+; input_long[8][14]                       ; Lost fanout        ;
+; input_long[8][13]                       ; Lost fanout        ;
+; input_long[8][12]                       ; Lost fanout        ;
+; input_long[8][11]                       ; Lost fanout        ;
+; input_long[8][10]                       ; Lost fanout        ;
+; input_long[8][9]                        ; Lost fanout        ;
+; input_long[8][8]                        ; Lost fanout        ;
+; input_long[8][7]                        ; Lost fanout        ;
+; input_long[8][6]                        ; Lost fanout        ;
+; input_long[8][5]                        ; Lost fanout        ;
+; input_long[8][4]                        ; Lost fanout        ;
+; input_long[8][3]                        ; Lost fanout        ;
+; input_long[8][2]                        ; Lost fanout        ;
+; input_long[8][1]                        ; Lost fanout        ;
+; input_long[8][0]                        ; Lost fanout        ;
+; input_long[10][31]                      ; Lost fanout        ;
+; input_long[10][30]                      ; Lost fanout        ;
+; input_long[10][29]                      ; Lost fanout        ;
+; input_long[10][28]                      ; Lost fanout        ;
+; input_long[10][27]                      ; Lost fanout        ;
+; input_long[10][26]                      ; Lost fanout        ;
+; input_long[10][25]                      ; Lost fanout        ;
+; input_long[10][24]                      ; Lost fanout        ;
+; input_long[10][23]                      ; Lost fanout        ;
+; input_long[10][22]                      ; Lost fanout        ;
+; input_long[10][21]                      ; Lost fanout        ;
+; input_long[10][20]                      ; Lost fanout        ;
+; input_long[10][19]                      ; Lost fanout        ;
+; input_long[10][18]                      ; Lost fanout        ;
+; input_long[10][17]                      ; Lost fanout        ;
+; input_long[10][16]                      ; Lost fanout        ;
+; input_long[10][15]                      ; Lost fanout        ;
+; input_long[10][14]                      ; Lost fanout        ;
+; input_long[10][13]                      ; Lost fanout        ;
+; input_long[10][12]                      ; Lost fanout        ;
+; input_long[10][11]                      ; Lost fanout        ;
+; input_long[10][10]                      ; Lost fanout        ;
+; input_long[10][9]                       ; Lost fanout        ;
+; input_long[10][8]                       ; Lost fanout        ;
+; input_long[10][7]                       ; Lost fanout        ;
+; input_long[10][6]                       ; Lost fanout        ;
+; input_long[10][5]                       ; Lost fanout        ;
+; input_long[10][4]                       ; Lost fanout        ;
+; input_long[10][3]                       ; Lost fanout        ;
+; input_long[10][2]                       ; Lost fanout        ;
+; input_long[10][1]                       ; Lost fanout        ;
+; input_long[10][0]                       ; Lost fanout        ;
+; input_long[12][31]                      ; Lost fanout        ;
+; input_long[12][30]                      ; Lost fanout        ;
+; input_long[12][29]                      ; Lost fanout        ;
+; input_long[12][28]                      ; Lost fanout        ;
+; input_long[12][27]                      ; Lost fanout        ;
+; input_long[12][26]                      ; Lost fanout        ;
+; input_long[12][25]                      ; Lost fanout        ;
+; input_long[12][24]                      ; Lost fanout        ;
+; input_long[12][23]                      ; Lost fanout        ;
+; input_long[12][22]                      ; Lost fanout        ;
+; input_long[12][21]                      ; Lost fanout        ;
+; input_long[12][20]                      ; Lost fanout        ;
+; input_long[12][19]                      ; Lost fanout        ;
+; input_long[12][18]                      ; Lost fanout        ;
+; input_long[12][17]                      ; Lost fanout        ;
+; input_long[12][16]                      ; Lost fanout        ;
+; input_long[12][15]                      ; Lost fanout        ;
+; input_long[12][14]                      ; Lost fanout        ;
+; input_long[12][13]                      ; Lost fanout        ;
+; input_long[12][12]                      ; Lost fanout        ;
+; input_long[12][11]                      ; Lost fanout        ;
+; input_long[12][10]                      ; Lost fanout        ;
+; input_long[12][9]                       ; Lost fanout        ;
+; input_long[12][8]                       ; Lost fanout        ;
+; input_long[12][7]                       ; Lost fanout        ;
+; input_long[12][6]                       ; Lost fanout        ;
+; input_long[12][5]                       ; Lost fanout        ;
+; input_long[12][4]                       ; Lost fanout        ;
+; input_long[12][3]                       ; Lost fanout        ;
+; input_long[12][2]                       ; Lost fanout        ;
+; input_long[12][1]                       ; Lost fanout        ;
+; input_long[12][0]                       ; Lost fanout        ;
+; input_long[14][31]                      ; Lost fanout        ;
+; input_long[14][30]                      ; Lost fanout        ;
+; input_long[14][29]                      ; Lost fanout        ;
+; input_long[14][28]                      ; Lost fanout        ;
+; input_long[14][27]                      ; Lost fanout        ;
+; input_long[14][26]                      ; Lost fanout        ;
+; input_long[14][25]                      ; Lost fanout        ;
+; input_long[14][24]                      ; Lost fanout        ;
+; input_long[14][23]                      ; Lost fanout        ;
+; input_long[14][22]                      ; Lost fanout        ;
+; input_long[14][21]                      ; Lost fanout        ;
+; input_long[14][20]                      ; Lost fanout        ;
+; input_long[14][19]                      ; Lost fanout        ;
+; input_long[14][18]                      ; Lost fanout        ;
+; input_long[14][17]                      ; Lost fanout        ;
+; input_long[14][16]                      ; Lost fanout        ;
+; input_long[14][15]                      ; Lost fanout        ;
+; input_long[14][14]                      ; Lost fanout        ;
+; input_long[14][13]                      ; Lost fanout        ;
+; input_long[14][12]                      ; Lost fanout        ;
+; input_long[14][11]                      ; Lost fanout        ;
+; input_long[14][10]                      ; Lost fanout        ;
+; input_long[14][9]                       ; Lost fanout        ;
+; input_long[14][8]                       ; Lost fanout        ;
+; input_long[14][7]                       ; Lost fanout        ;
+; input_long[14][6]                       ; Lost fanout        ;
+; input_long[14][5]                       ; Lost fanout        ;
+; input_long[14][4]                       ; Lost fanout        ;
+; input_long[14][3]                       ; Lost fanout        ;
+; input_long[14][2]                       ; Lost fanout        ;
+; input_long[14][1]                       ; Lost fanout        ;
+; input_long[14][0]                       ; Lost fanout        ;
+; input_long[16][31]                      ; Lost fanout        ;
+; input_long[16][30]                      ; Lost fanout        ;
+; input_long[16][29]                      ; Lost fanout        ;
+; input_long[16][28]                      ; Lost fanout        ;
+; input_long[16][27]                      ; Lost fanout        ;
+; input_long[16][26]                      ; Lost fanout        ;
+; input_long[16][25]                      ; Lost fanout        ;
+; input_long[16][24]                      ; Lost fanout        ;
+; input_long[16][23]                      ; Lost fanout        ;
+; input_long[16][22]                      ; Lost fanout        ;
+; input_long[16][21]                      ; Lost fanout        ;
+; input_long[16][20]                      ; Lost fanout        ;
+; input_long[16][19]                      ; Lost fanout        ;
+; input_long[16][18]                      ; Lost fanout        ;
+; input_long[16][17]                      ; Lost fanout        ;
+; input_long[16][16]                      ; Lost fanout        ;
+; input_long[16][15]                      ; Lost fanout        ;
+; input_long[16][14]                      ; Lost fanout        ;
+; input_long[16][13]                      ; Lost fanout        ;
+; input_long[16][12]                      ; Lost fanout        ;
+; input_long[16][11]                      ; Lost fanout        ;
+; input_long[16][10]                      ; Lost fanout        ;
+; input_long[16][9]                       ; Lost fanout        ;
+; input_long[16][8]                       ; Lost fanout        ;
+; input_long[16][7]                       ; Lost fanout        ;
+; input_long[16][6]                       ; Lost fanout        ;
+; input_long[16][5]                       ; Lost fanout        ;
+; input_long[16][4]                       ; Lost fanout        ;
+; input_long[16][3]                       ; Lost fanout        ;
+; input_long[16][2]                       ; Lost fanout        ;
+; input_long[16][1]                       ; Lost fanout        ;
+; input_long[16][0]                       ; Lost fanout        ;
+; input_long[18][31]                      ; Lost fanout        ;
+; input_long[18][30]                      ; Lost fanout        ;
+; input_long[18][29]                      ; Lost fanout        ;
+; input_long[18][28]                      ; Lost fanout        ;
+; input_long[18][27]                      ; Lost fanout        ;
+; input_long[18][26]                      ; Lost fanout        ;
+; input_long[18][25]                      ; Lost fanout        ;
+; input_long[18][24]                      ; Lost fanout        ;
+; input_long[18][23]                      ; Lost fanout        ;
+; input_long[18][22]                      ; Lost fanout        ;
+; input_long[18][21]                      ; Lost fanout        ;
+; input_long[18][20]                      ; Lost fanout        ;
+; input_long[18][19]                      ; Lost fanout        ;
+; input_long[18][18]                      ; Lost fanout        ;
+; input_long[18][17]                      ; Lost fanout        ;
+; input_long[18][16]                      ; Lost fanout        ;
+; input_long[18][15]                      ; Lost fanout        ;
+; input_long[18][14]                      ; Lost fanout        ;
+; input_long[18][13]                      ; Lost fanout        ;
+; input_long[18][12]                      ; Lost fanout        ;
+; input_long[18][11]                      ; Lost fanout        ;
+; input_long[18][10]                      ; Lost fanout        ;
+; input_long[18][9]                       ; Lost fanout        ;
+; input_long[18][8]                       ; Lost fanout        ;
+; input_long[18][7]                       ; Lost fanout        ;
+; input_long[18][6]                       ; Lost fanout        ;
+; input_long[18][5]                       ; Lost fanout        ;
+; input_long[18][4]                       ; Lost fanout        ;
+; input_long[18][3]                       ; Lost fanout        ;
+; input_long[18][2]                       ; Lost fanout        ;
+; input_long[18][1]                       ; Lost fanout        ;
+; input_long[18][0]                       ; Lost fanout        ;
+; input_long[20][31]                      ; Lost fanout        ;
+; input_long[20][30]                      ; Lost fanout        ;
+; input_long[20][29]                      ; Lost fanout        ;
+; input_long[20][28]                      ; Lost fanout        ;
+; input_long[20][27]                      ; Lost fanout        ;
+; input_long[20][26]                      ; Lost fanout        ;
+; input_long[20][25]                      ; Lost fanout        ;
+; input_long[20][24]                      ; Lost fanout        ;
+; input_long[20][23]                      ; Lost fanout        ;
+; input_long[20][22]                      ; Lost fanout        ;
+; input_long[20][21]                      ; Lost fanout        ;
+; input_long[20][20]                      ; Lost fanout        ;
+; input_long[20][19]                      ; Lost fanout        ;
+; input_long[20][18]                      ; Lost fanout        ;
+; input_long[20][17]                      ; Lost fanout        ;
+; input_long[20][16]                      ; Lost fanout        ;
+; input_long[20][15]                      ; Lost fanout        ;
+; input_long[20][14]                      ; Lost fanout        ;
+; input_long[20][13]                      ; Lost fanout        ;
+; input_long[20][12]                      ; Lost fanout        ;
+; input_long[20][11]                      ; Lost fanout        ;
+; input_long[20][10]                      ; Lost fanout        ;
+; input_long[20][9]                       ; Lost fanout        ;
+; input_long[20][8]                       ; Lost fanout        ;
+; input_long[20][7]                       ; Lost fanout        ;
+; input_long[20][6]                       ; Lost fanout        ;
+; input_long[20][5]                       ; Lost fanout        ;
+; input_long[20][4]                       ; Lost fanout        ;
+; input_long[20][3]                       ; Lost fanout        ;
+; input_long[20][2]                       ; Lost fanout        ;
+; input_long[20][1]                       ; Lost fanout        ;
+; input_long[20][0]                       ; Lost fanout        ;
+; input_long[22][31]                      ; Lost fanout        ;
+; input_long[22][30]                      ; Lost fanout        ;
+; input_long[22][29]                      ; Lost fanout        ;
+; input_long[22][28]                      ; Lost fanout        ;
+; input_long[22][27]                      ; Lost fanout        ;
+; input_long[22][26]                      ; Lost fanout        ;
+; input_long[22][25]                      ; Lost fanout        ;
+; input_long[22][24]                      ; Lost fanout        ;
+; input_long[22][23]                      ; Lost fanout        ;
+; input_long[22][22]                      ; Lost fanout        ;
+; input_long[22][21]                      ; Lost fanout        ;
+; input_long[22][20]                      ; Lost fanout        ;
+; input_long[22][19]                      ; Lost fanout        ;
+; input_long[22][18]                      ; Lost fanout        ;
+; input_long[22][17]                      ; Lost fanout        ;
+; input_long[22][16]                      ; Lost fanout        ;
+; input_long[22][15]                      ; Lost fanout        ;
+; input_long[22][14]                      ; Lost fanout        ;
+; input_long[22][13]                      ; Lost fanout        ;
+; input_long[22][12]                      ; Lost fanout        ;
+; input_long[22][11]                      ; Lost fanout        ;
+; input_long[22][10]                      ; Lost fanout        ;
+; input_long[22][9]                       ; Lost fanout        ;
+; input_long[22][8]                       ; Lost fanout        ;
+; input_long[22][7]                       ; Lost fanout        ;
+; input_long[22][6]                       ; Lost fanout        ;
+; input_long[22][5]                       ; Lost fanout        ;
+; input_long[22][4]                       ; Lost fanout        ;
+; input_long[22][3]                       ; Lost fanout        ;
+; input_long[22][2]                       ; Lost fanout        ;
+; input_long[22][1]                       ; Lost fanout        ;
+; input_long[22][0]                       ; Lost fanout        ;
+; Total Number of Removed Registers = 384 ;                    ;
++-----------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 34    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 17    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 17    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 34                          ;
+;     CLR               ; 17                          ;
+;     ENA               ; 17                          ;
+; arriav_lcell_comb     ; 32                          ;
+;     arith             ; 32                          ;
+;         2 data inputs ; 32                          ;
+; arriav_mac            ; 13                          ;
+; boundary_port         ; 435                         ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 0.27                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+    Info: Processing started: Tue Apr 03 13:16:21 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab_4_g07 -c lab_4_g07
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file //campus.mcgill.ca/emf/cpe/eozer/desktop/ecse325/ecse-325/lab-4/g07_lab4.vhd
+    Info (12022): Found design unit 1: coefficient_input_type File: //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd Line: 5
+    Info (12022): Found design unit 2: g07_Lab4-details File: //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd Line: 21
+    Info (12023): Found entity 1: g07_Lab4 File: //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd Line: 14
+Info (12127): Elaborating entity "g07_Lab4" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at g07_Lab4.vhd(45): signal "input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: //campus.mcgill.ca/emf/cpe/eozer/Desktop/ecse325/ecse-325/Lab-4/g07_Lab4.vhd Line: 45
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 384 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 497 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 418 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 49 logic cells
+    Info (21062): Implemented 13 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 932 megabytes
+    Info: Processing ended: Tue Apr 03 13:16:35 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:26
+
+
